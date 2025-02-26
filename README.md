@@ -28,6 +28,7 @@ Sicne this is a program in which you need to run yourself (as of now at least) t
 3. In the terminal, type `python ./program.py`. After clicking `Enter` the program should now be running smoothly.
 4. Press `F7` in order to take a screenshot
 5. Hopefully after some OCR magic you should see the effectivess of different attack types.
+6. If you want to stop the program from running, press `F8`
 
 Currently it looks like this: 
 
