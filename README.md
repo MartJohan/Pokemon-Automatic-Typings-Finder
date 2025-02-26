@@ -30,5 +30,6 @@ Sicne this is a program in which you need to run yourself (as of now at least) t
 5. Hopefully after some OCR magic you should see the effectivess of different attack types.
 
 Currently it looks like this: 
+
 ![image](https://github.com/user-attachments/assets/5c74f75f-058d-477b-a0f0-319a7c9a498f)
 
