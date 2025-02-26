@@ -125,8 +125,12 @@ def find_pokemon_info():
     # save_image()
     pokemon_name = process_image()
     # Extract the name and types into seperate variables
-    name, type1, type2 = itemgetter('name', 'type1', 'type2')(find_pokemon_object(pokemon_name.lower()))
-    print(pokemonTypeEffectivenesModule.calculate_type_effectiveness('bug', 'steel'))
+    type1, type2 = itemgetter('name', 'type1', 'type2')(find_pokemon_object(pokemon_name.lower()))
+    super_effective, normal, not_very_effective, no_effect = itemgetter('super_effective','normal', 'not_very_effective', 'no_effect')(pokemonTypeEffectivenesModule.calculate_type_effectiveness(type1, type2))
+    print('Super effective: ', super_effective)
+    print('Normal: ', normal)
+    print('Not very effective', not_very_effective)
+    print('No effect: ', no_effect)
 
 if __name__ == "__main__":
     main()
